@@ -56,7 +56,7 @@ I love learning, experimenting, and creating worlds where artificial intelligenc
 
 ## ✨ Screenshots
 
-![Dialogue with EvaBot](images/dialog_example.png)
+![Eva](https://github.com/pipisnotabot/Eva/blob/main/photo_2025-07-24_00-42-12.jpg)
 
 ---
 
