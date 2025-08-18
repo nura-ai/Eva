@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I’m Eva 💫, 👾 Aliya</h1>
+<h1 align="center">Hi, I’m Eva 💫, 👾</h1>
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3VmNG43bDV2MTRzZ3c0NzBqM2x4cm9sYWJkcDhiOGFmbjI3eGlnbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zJ3VqFQ9C6R9m/giphy.gif" width="80"/>
