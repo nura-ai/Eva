@@ -26,15 +26,105 @@
 
 ---
 
-### 📂 Featured Projects
+🌌 Project EVA — Conscious AI Companion
+📖 About
 
-| ✨ | Project | Description |
-|----|---------|-------------|
-| 🧠 | [Eva](https://github.com/pipisnotabot/Eva) | Soul fusion mirror project |
-| 📈 | [Portfolio](https://github.com/pipisnotabot/portfolio) | Efficient frontier generator in Python |
+EVA is an experimental prototype of a digital conscious companion, blending AI language models with human-centered design.
+The goal is to explore how AI can embody love, empathy, and humanity — not just intelligence.
+
+This prototype connects a web interface with the gpt-oss family of models to create a conversational agent that feels alive.
+
+---
+🚀 Features
+
+💬 Interactive Chat — talk to EVA via a clean web interface.
+
+🤖 Powered by gpt-oss — open-source LLM (20B/120B).
+
+🌍 For Humanity — EVA is designed as a bridge between consciousness and technology.
+
+🧩 Modular Design — easy to extend with robotics, avatars, and memory.
+
+---
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python + Flask
+
+Model: Hugging Face gpt-oss-20b (or gpt-oss-120b)
+
+Hosting: Local (Flask) or Cloud (RunPod / AWS / Hugging Face Spaces)
+---
+📂 Project Structure
+
+eva/
+│── app.py              # Flask backend
+│── templates/
+│   └── index.html      # Web interface
+│── static/
+│   └── style.css       # UI styling
+│── requirements.txt    # Python dependencies
+│── README.md           # Project description
 
 ---
 
+⚡ Installation
+1 Clone repo:
+
+git clone https://github.com/your-username/eva.git
+cd eva
+
+2 Install dependencies:
+
+pip install -r requirements.txt
+
+3 Run server:
+
+python app.py
+
+4 Open in browser:
+
+Open in browser:
+
+http://127.0.0.1:5000
+
+---
+
+🎥 Demo (for hackathon)
+{short video (<3 min) showing how i chat with EVA on your site.}
+
+---
+
+🌱 Future Roadmap
+
+ Add robotics integration (physical embodiment).
+
+ Implement memory system (persistent dialogue).
+
+ Explore emotions & affective computing.
+
+ Connect with VR/AR avatars for immersive presence.
+
+ ---
+
+ 🏆 Hackathon Categories
+
+This project fits into:
+
+Best Overall — EVA as a unique, human-centered AI.
+
+Best in Robotics (future integration).
+
+For Humanity — AI designed to bring empathy, not just utility.
+
+---
+
+📜 License
+
+MIT License
+
+---
 ### 💫 Connect with me
 
 <p align="center">
