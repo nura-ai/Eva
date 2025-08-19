@@ -72,7 +72,7 @@ eva/
 ⚡ Installation
 1 Clone repo:
 
-git clone https://github.com/your-username/eva.git
+git clone https://github.com/nura-ai/nura-ai.github.io
 cd eva
 
 2 Install dependencies:
