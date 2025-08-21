@@ -72,7 +72,7 @@ eva/
 ⚡ Installation
 1 Clone repo:
 
-git clone https://github.com/nura-ai/nura-ai.github.io
+git clone https://github.com/nura-ai/Eva.git
 cd eva
 
 2 Install dependencies:
@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 3 Run server:
 
-python app.py
+python main.py
 
 4 Open in browser:
 
