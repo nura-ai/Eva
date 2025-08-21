@@ -59,7 +59,7 @@ Hosting: Local (Flask) or Cloud (RunPod / AWS / Hugging Face Spaces)
 📂 Project Structure
 
 eva/
-│── app.py              # Flask backend
+│── main.py              # Flask backend
 │── templates/
 │   └── index.html      # Web interface
 │── static/
