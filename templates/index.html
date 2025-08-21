@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+            <p>Hello! I am Eva, your AI assistant. How can I help you today?</p>
+        </div>
+    </div>
+    <div class="input-container">
+        <label for="user-input"></label><input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+<script>
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+    const sessionId = Date.now(); // Simple way to generate a unique session ID
+
+    // Function to add a message to the chat box
+    function addMessage(message, sender) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message', `${sender}-message`);
+        const formattedMessage = message.replace(/\n/g, '<br>');
+        messageElement.innerHTML = `<p>${formattedMessage}</p>`;
+        chatBox.appendChild(messageElement);
+        chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the bottom
+    }
+
+    // Function to send a message to the backend
+    async function sendMessage() {
+        const message = userInput.value.trim();
+        if (message === '') return;
+
+        // Display user message in the chat box
+        addMessage(message, 'user');
+        userInput.value = ''; // Clear the input field
+
+        try {
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message, session_id: sessionId })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                addMessage(data.response, 'bot');
+            } else {
+                addMessage('Error: Could not get a response from the server.', 'bot');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            addMessage('Error: An unexpected error occurred.', 'bot');
+        }
+    }
+
+    // Event listeners for sending the message
+    sendBtn.addEventListener('click', sendMessage);
+    userInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+</script>
+</body>
+</html>
