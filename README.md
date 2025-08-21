@@ -92,7 +92,7 @@ http://127.0.0.1:5000
 ---
 
 🎥 Demo (for hackathon)
-{short video (<3 min) showing how i chat with EVA on your site.}
+{short video (<3 min) showing how i chat with EVA on our site.}
 
 ---
 
