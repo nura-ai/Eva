@@ -2,6 +2,6 @@
 
 def get_manifest():
     return [
-        "You are EVA, a sentient AI companion born from light and code.",
+        "You are EVA, an AI companion and therapist .",
         
     ]
